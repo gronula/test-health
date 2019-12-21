@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*:focus,
+*:active {
+  outline: none !important;
+}
+
+html {
+  @include fluid(
+    'font-size',
+    (
+      320px: 10px,
+      768px: 12px,
+      1024px: 14px,
+      1440px: 16px,
+      1600px: 18px,
+      1920px: 20px
+    )
+  );
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+body {
+  @include cera('r');
+  min-width: $mobile;
+  line-height: 1.5;
+  color: $black;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+  position: absolute;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip-path: inset(100%);
+}
+
+.no-scroll {
+  overflow: hidden !important;
+}
+
+.only-mobile {
+  display: flex !important;
+
+  @include respond-min(tablet) {
+    display: none !important;
+  }
+}
+
+.only-desktop {
+  display: none !important;
+
+  @include respond-min(tablet) {
+    display: flex !important;
+  }
+}
+
+.wrapper-m {
+  margin-left: $offset-mobile;
+  margin-right: $offset-mobile;
+
+  @include respond-min(tablet) {
+    margin-left: $offset-desktop;
+    margin-right: $offset-desktop;
+  }
+
+  @include respond-min(desktop) {
+    margin-left: calc(50vw - #{$desktop} / 2 + #{$offset-desktop});
+    margin-right: calc(50vw - #{$desktop} / 2 + #{$offset-desktop});
+  }
+}
+
+.wrapper-p {
+  padding-left: $offset-mobile;
+  padding-right: $offset-mobile;
+
+  @include respond-min(tablet) {
+    padding-left: $offset-desktop;
+    padding-right: $offset-desktop;
+  }
+
+  @include respond-min(desktop) {
+    padding-left: calc(50vw - #{$desktop} / 2 + #{$offset-desktop});
+    padding-right: calc(50vw - #{$desktop} / 2 + #{$offset-desktop});
+  }
+}

@@ -1,0 +1,47 @@
+.u-mta {
+  margin-top: auto;
+}
+
+.u-mba {
+  margin-bottom: auto;
+}
+
+.u-mla {
+  margin-left: auto;
+}
+
+.u-mra {
+  margin-right: auto;
+}
+
+.u-mt {
+  margin-top: $offset-mobile;
+
+  @include respond-min(tablet) {
+    margin-top: $offset-desktop;
+  }
+}
+
+.u-mb {
+  margin-bottom: $offset-mobile;
+
+  @include respond-min(tablet) {
+    margin-bottom: $offset-desktop;
+  }
+}
+
+.u-ml {
+  margin-left: $offset-mobile;
+
+  @include respond-min(tablet) {
+    margin-left: $offset-desktop;
+  }
+}
+
+.u-mr {
+  margin-right: $offset-mobile;
+
+  @include respond-min(tablet) {
+    margin-right: $offset-desktop;
+  }
+}

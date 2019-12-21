@@ -1,0 +1,35 @@
+/* Custom variables */
+
+:root {
+  --scrollbar-width: 17px;
+}
+
+
+/* Viewports */
+
+$mobile: 320px;
+$mobile-md: 360px;
+$tablet-sm: 768px;
+$tablet: 1024px;
+$desktop-sm: 1280px;
+$desktop: 1440px;
+$desktop-md: 1520px;
+$desktop-lg: 1600px;
+$desktop-xlg: 1920px;
+
+
+/* Colors */
+
+$black: #000000;
+$white: #ffffff;
+
+
+/* Offsets */
+
+$offset-mobile: 2.5rem;
+$offset-desktop: 7rem;
+
+
+/* Transition */
+
+$trs: all 0.4s cubic-bezier(0.33, 0, 0, 1);
