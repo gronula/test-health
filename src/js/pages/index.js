@@ -1,5 +1,6 @@
 import '~/js/modules/common';
 import getSwiperSlider from '~/js/modules/slider';
+import notificate from '~/js/modules/notificate';
 
 document.addEventListener(`DOMContentLoaded`, () => {
   const mainSlider = document.querySelector(`.main-slider__slider`);
@@ -57,6 +58,27 @@ document.addEventListener(`DOMContentLoaded`, () => {
 
     mainSlider.addEventListener(`mouseleave`, () => {
       mainSwiper.autoplay.start();
+    });
+  }
+
+  const subscriptionSubmitBtn = document.querySelector(`.subscription__submit`);
+
+  if (subscriptionSubmitBtn) {
+    subscriptionSubmitBtn.addEventListener(`click`, (e) => {
+      const form = document.querySelector(`.subscription__form`);
+
+      if (form) {
+        if (form.reportValidity()) {
+          e.preventDefault();
+          e.target.disabled = true;
+
+          setTimeout(() => {
+            notificate();
+            form.reset();
+            e.target.disabled = false;
+          }, 1000);
+        }
+      }
     });
   }
 });

@@ -1,7 +1,9 @@
 .btn {
+  @include cera('b');
   display: flex;
   align-items: center;
-  padding: 0.8rem 1.7rem;
+  padding: 0.7rem 1.7rem 0.9rem;
+  font-size: 0.8rem;
   border: 1px solid $blue-1;
   border-radius: 1.5rem;
   transition: $trs;

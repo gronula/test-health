@@ -9,7 +9,7 @@ const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 // Main const
 const PATHS = {
   src: path.join(__dirname, `../src`),
-  dist: path.join(__dirname, `../dist`),
+  dist: path.join(__dirname, `../public`),
   assets: `assets`
 };
 

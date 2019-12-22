@@ -1,3 +1,32 @@
 mixin about
   section.about
-    h2 About
+    .circle
+    .circle
+
+    .about__content.wrapper-m.u-flex.u-aic
+      +picture(`about__image`, {
+        minWidth: `1024px`,
+        desktopName: `about-image-01`,
+        mobileName: `about-image-01`,
+        alt: `Что такое «Дневник здоровья»?`
+      })
+
+      .about__inner.u-flex-col.u-ais.clr-blue-2
+        h2.about__title Что такое «Дневник здоровья»?
+
+        p.about__text Дневник пациента — это удобный онлайн-сервис:
+
+        ul.about__list.u-flex-col
+          li.about__list-item Вносите результаты измерений вручную или с помощью интегрированных приборов
+          li.about__list-item Ведите персональную медицинскую карту с историей ваших измерений
+          li.about__list-item Делитесь результатами измерений со специалистами для повышения эффективности лечения
+          li.about__list-item Получайте рекомендации, созданные специально для вас
+
+        a.about__btn.btn.btn--fill.t-tdn.bg-red-1.clr-white(href=`#`) Оставить заявку
+
+    +picture(`about__bg`, {
+      minWidth: `1024px`,
+      desktopName: `about-pulse`,
+      mobileName: `about-pulse`,
+      alt: `Что такое «Дневник здоровья»?`
+    })

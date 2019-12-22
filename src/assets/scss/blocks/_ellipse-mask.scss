@@ -5,10 +5,9 @@
   left: -2.3rem;
   right: -2.3rem;
   height: 5.1rem;
+  pointer-events: none;
 
   svg {
     fill: $white;
-    stroke: $white;
-    stroke-width: 10px;
   }
 }
