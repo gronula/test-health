@@ -1,0 +1,22 @@
+.btn {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 1.7rem;
+  border: 1px solid $blue-1;
+  border-radius: 1.5rem;
+  transition: $trs;
+
+  &--fill {
+    border: 0;
+
+    &.bg-red-1 {
+      &:hover {
+        background-color: $red-2;
+      }
+    }
+  }
+
+  &:hover {
+    background-color: $blue-1;
+  }
+}

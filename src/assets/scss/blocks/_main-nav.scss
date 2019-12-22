@@ -1,0 +1,45 @@
+.main-nav__link {
+  @include cera('b');
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-right: 2.6rem;
+  font-size: 0.8rem;
+  white-space: nowrap;
+
+  &:last-of-type {
+    margin-left: 0.8rem;
+    margin-right: 0;
+  }
+
+  span {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -0.4rem;
+      left: 50%;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: $white;
+      opacity: 0;
+      transition: $trs;
+      transform: translateX(-50%);
+    }
+  }
+
+  &.btn {
+    padding: 0.8rem 1.7rem;
+
+    span::after {
+      display: none;
+    }
+  }
+
+  &:hover {
+    span::after {
+      opacity: 1;
+    }
+  }
+}

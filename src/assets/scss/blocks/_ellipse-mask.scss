@@ -1,0 +1,14 @@
+.ellipse-mask {
+  position: absolute;
+  z-index: 3;
+  bottom: -1px;
+  left: -2.3rem;
+  right: -2.3rem;
+  height: 5.1rem;
+
+  svg {
+    fill: $white;
+    stroke: $white;
+    stroke-width: 10px;
+  }
+}

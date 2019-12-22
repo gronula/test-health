@@ -1,0 +1,12 @@
+.header {
+  position: relative;
+  z-index: 2;
+  min-height: 5rem;
+}
+
+.header__logo {
+  width: 10rem;
+  margin-right: 5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}

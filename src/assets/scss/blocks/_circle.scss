@@ -1,0 +1,7 @@
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid $white;
+  opacity: 0.06;
+  pointer-events: none;
+}

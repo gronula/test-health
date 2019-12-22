@@ -9,8 +9,8 @@
     "start": "npm run dev"
   },
   "browserslist": [
-    "> 1%",
-    "last 3 version"
+    "ie 11",
+    "last 2 version"
   ],
   "license": "MIT",
   "devDependencies": {

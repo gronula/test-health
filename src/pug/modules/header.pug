@@ -1,0 +1,11 @@
+mixin header
+  header.header.u-flex.u-jcsb.wrapper-p
+    a.header__logo.u-flex(href=`/`)
+      +picture(``, {
+        minWidth: `1024px`,
+        desktopName: `logo-gray`,
+        mobileName: `logo-gray`,
+        alt: `Моё здоровье. Программа доступного лечения`
+      })
+
+    +main-nav

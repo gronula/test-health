@@ -7,6 +7,18 @@
   flex-direction: column;
 }
 
+.u-jcsb {
+  justify-content: space-between;
+}
+
+.u-jcc {
+  justify-content: center;
+}
+
+.u-jce {
+  justify-content: flex-end;
+}
+
 .u-ais {
   align-items: flex-start;
 }
@@ -19,12 +31,16 @@
   align-items: center;
 }
 
-.u-jcsb {
-  justify-content: space-between;
+.u-ass {
+  align-self: flex-start;
 }
 
-.u-jce {
-  justify-content: flex-end;
+.u-ase {
+  align-self: flex-end;
+}
+
+.u-asc {
+  align-self: center;
 }
 
 .u-fxw {

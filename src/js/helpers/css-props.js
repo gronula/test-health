@@ -14,6 +14,16 @@ const setCssProperties = () => {
       `--vh`,
       `${vh}px`
   );
+
+  // Header height
+  const header = document.querySelector(`.header`);
+
+  if (header) {
+    document.documentElement.style.setProperty(
+        `--header-height`,
+        `${header.getBoundingClientRect().height}px`
+    );
+  }
 };
 
 window.addEventListener(`DOMContentLoaded`, setCssProperties);
