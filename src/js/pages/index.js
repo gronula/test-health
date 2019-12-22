@@ -1,10 +1,25 @@
 import '~/js/modules/common';
+import smoothScroll from '~/js/helpers/smooth-scroll';
 import getSwiperSlider from '~/js/modules/slider';
 import notificate from '~/js/modules/notificate';
 
 document.addEventListener(`DOMContentLoaded`, () => {
-  const mainSlider = document.querySelector(`.main-slider__slider`);
+  const anchors = document.querySelectorAll(`[data-anchor]`);
+  if (anchors.length) {
+    anchors.forEach((a) => {
+      a.addEventListener(`click`, (e) => {
+        const targetId = a.dataset.anchor;
+        const targetBlock = document.querySelector(`#${targetId}`);
 
+        if (targetBlock) {
+          e.preventDefault();
+          smoothScroll(targetBlock.offsetTop);
+        }
+      });
+    });
+  }
+
+  const mainSlider = document.querySelector(`.main-slider__slider`);
   const interleaveOffset = 0.5;
   const mainSliderSwiperParams = {
     speed: 1000,

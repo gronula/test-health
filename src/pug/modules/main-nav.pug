@@ -1,6 +1,9 @@
 mixin main-nav
   nav.main-nav.u-flex.u-fxw
-    a.main-nav__link.clr-white.t-tdn.u-flex.u-aic(href=`#`)
+    a.main-nav__link.clr-white.t-tdn.u-flex.u-aic(
+      href=`#`,
+      data-anchor=`about`
+    )
       span О сервисе
     a.main-nav__link.clr-white.t-tdn.u-flex.u-aic(href=`#`)
       span Функции
@@ -8,5 +11,8 @@ mixin main-nav
       span Возможности
     a.main-nav__link.clr-white.t-tdn.u-flex.u-aic(href=`#`)
       span Партнеры
-    a.main-nav__link.clr-white.t-tdn.btn.u-flex.u-aic.u-asc(href=`#`)
+    a.main-nav__link.clr-white.t-tdn.btn.u-flex.u-aic.u-asc(
+      href=`#`,
+      data-anchor=`subscription`
+    )
       span Оставить заявку

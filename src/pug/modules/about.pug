@@ -1,5 +1,5 @@
 mixin about
-  section.about
+  section.about#about
     .circle
     .circle
 
@@ -22,7 +22,10 @@ mixin about
           li.about__list-item Делитесь результатами измерений со специалистами для повышения эффективности лечения
           li.about__list-item Получайте рекомендации, созданные специально для вас
 
-        a.about__btn.btn.btn--fill.t-tdn.bg-red-1.clr-white(href=`#`) Оставить заявку
+        a.about__btn.btn.btn--fill.t-tdn.bg-red-1.clr-white(
+          href=`#`
+          data-anchor=`subscription`
+        ) Оставить заявку
 
     +picture(`about__bg`, {
       minWidth: `1024px`,
